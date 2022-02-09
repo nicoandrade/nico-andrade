@@ -1,0 +1,40 @@
+@tailwind base;
+
+body {
+    @apply text-gray-500;
+    @apply bg-gradient-to-l from-gray-800 to-gray-900;
+}
+
+/* Default styles for inputs */
+[type="text"],
+[type="email"],
+[type="url"],
+[type="password"],
+[type="number"],
+[type="date"],
+[type="datetime-local"],
+[type="month"],
+[type="search"],
+[type="tel"],
+[type="time"],
+[type="week"],
+[multiple],
+textarea,
+select {
+    @apply block;
+    @apply w-full;
+    @apply rounded-lg;
+    @apply bg-white;
+    @apply border-gray-200;
+    @apply border-2;
+    @apply py-3;
+    @apply shadow-none;
+    @apply text-gray-600;
+    @apply focus:border-transparent;
+    @apply focus:ring-2;
+    @apply focus:ring-indigo-600 placeholder-gray-300;
+}
+
+@tailwind components;
+
+@tailwind utilities;
