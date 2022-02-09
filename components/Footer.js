@@ -31,7 +31,7 @@ export default function Footer() {
                         This site is available on{" "}
                         <a
                             href=""
-                            rel="noopener"
+                            rel="noreferrer"
                             target="_blank"
                             className="hover:text-white"
                         >

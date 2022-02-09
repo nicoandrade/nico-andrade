@@ -9,7 +9,7 @@ export default function ThingCard({
     return (
         <a
             href={href}
-            rel="noopener"
+            rel="noreferrer"
             target="_blank"
             className={`p-2 rounded-xl text-gray-400 bg-gray-800 hover:bg-[${background}] hover:shadow-xl transition-all flex items-center`}
         >

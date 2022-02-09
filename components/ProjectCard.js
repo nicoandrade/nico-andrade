@@ -10,7 +10,7 @@ export default function ProjectCard({
     return (
         <a
             href={href}
-            rel="noopener"
+            rel="noreferrer"
             target="_blank"
             className="p-5 md:p-8 rounded-2xl bg-gradient-to-tl from-gray-800 to-gray-700 lg:aspect-square text-gray-400 border border-transparent border-opacity-0 hover:border-gray-700 hover:border-opacity-50 hover:shadow-xl hover:from-gray-900 hover:to-gray-800 transition-all"
         >

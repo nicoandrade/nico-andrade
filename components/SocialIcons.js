@@ -23,7 +23,7 @@ export default function SocialIcons() {
 const SocialLink = ({ href }) => (
     <a
         href={href}
-        rel="noopener"
+        rel="noreferrer"
         target="_blank"
         className="text-gray-600 hover:bg-gray-700 hover:text-white p-3 rounded-full transition-colors group"
     >
