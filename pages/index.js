@@ -17,7 +17,10 @@ export default function Home() {
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 mb-10">
             <div className="w-full flex justify-center my-6">
                 <Link href="/">
-                    <a className="text-gray-600 hover:text-white transition-colors">
+                    <a
+                        className="text-gray-600 hover:text-white transition-colors"
+                        aria-label="Nico Andrade"
+                    >
                         <Logo className="w-9 h-9" />
                     </a>
                 </Link>
@@ -116,9 +119,9 @@ export default function Home() {
                 {/* Hack to generate custom classes */}
                 <span className="hidden hover:bg-[#000000] hover:bg-[#38BDF8] hover:bg-[#0065A9] hover:bg-[#24B47E] hover:bg-[#6A01DA] hover:bg-[#0969D9] hover:bg-[#2C2C2C] hover:bg-[#DD4C4F] hover:bg-[#1D1D1D] hover:bg-[#FF6161] hover:bg-[#363B45] hover:bg-[#0572EC] hover:bg-[#1771EF] hover:bg-[#0073AA] hover:bg-[#22BC66] hover:bg-[#4354C7] hover:bg-[#40A6EB] hover:bg-[#705F30] hover:bg-[#705F30] hover:bg-[#8D733F]" />
 
-                <h4 className="border-b border-gray-800 text-lg font-bold text-gray-400 pb-3 mb-4">
+                <h3 className="border-b border-gray-800 text-lg font-bold text-gray-400 pb-3 mb-4">
                     Development
-                </h4>
+                </h3>
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-2 lg:gap-4 mb-10">
                     <ThingCard
                         title="Next.js"
@@ -170,9 +173,9 @@ export default function Home() {
                     />
                 </div>
 
-                <h4 className="border-b border-gray-800 text-lg font-bold text-gray-400 pb-3 mb-4">
+                <h3 className="border-b border-gray-800 text-lg font-bold text-gray-400 pb-3 mb-4">
                     Apps
-                </h4>
+                </h3>
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-2 lg:gap-4 mb-10">
                     <ThingCard
                         title="Figma"
@@ -231,9 +234,9 @@ export default function Home() {
                     />
                 </div>
 
-                <h4 className="border-b border-gray-800 text-lg font-bold text-gray-400 pb-3 mb-4">
+                <h3 className="border-b border-gray-800 text-lg font-bold text-gray-400 pb-3 mb-4">
                     Services
-                </h4>
+                </h3>
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-2 lg:gap-4 mb-10">
                     <ThingCard
                         title="WordPress"
@@ -261,9 +264,9 @@ export default function Home() {
                     />
                 </div>
 
-                <h4 className="border-b border-gray-800 text-lg font-bold text-gray-400 pb-3 mb-4">
+                <h3 className="border-b border-gray-800 text-lg font-bold text-gray-400 pb-3 mb-4">
                     Games
-                </h4>
+                </h3>
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-2 lg:gap-4 mb-10">
                     <ThingCard
                         title="Warzone"
@@ -281,7 +284,7 @@ export default function Home() {
                         title="Age of Empires II"
                         background="#8D733F"
                         icon="/images/things/ageofempires.png"
-                        href=""
+                        href="https://www.ageofempires.com/games/aoeiide/"
                     />
                 </div>
             </div>

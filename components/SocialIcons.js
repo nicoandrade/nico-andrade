@@ -26,6 +26,7 @@ const SocialLink = ({ href }) => (
         rel="noreferrer"
         target="_blank"
         className="text-gray-600 hover:bg-gray-700 hover:text-white p-3 rounded-full transition-colors group"
+        aria-label={href}
     >
         {(() => {
             if (href.includes("instagram"))

@@ -27,9 +27,9 @@ export default function ThingCard({
                 </span>
             </span>
 
-            <h5 className="text-sm md:text-base lg:text-lg font-bold text-gray-200 truncate">
+            <h4 className="text-sm md:text-base lg:text-lg font-bold text-gray-200 truncate">
                 {title}
-            </h5>
+            </h4>
         </a>
     );
 }

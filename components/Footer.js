@@ -30,10 +30,11 @@ export default function Footer() {
                     <div className="sm:order-2 flex items-center text-sm">
                         This site is available on{" "}
                         <a
-                            href=""
+                            href="https://github.com/nicoandrade/nico-andrade"
                             rel="noreferrer"
                             target="_blank"
                             className="hover:text-white"
+                            aria-label="GitHub"
                         >
                             <GithubIcon className="w-5 h-5 ml-2 mb-px" />
                         </a>

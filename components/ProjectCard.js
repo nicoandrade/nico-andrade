@@ -21,9 +21,9 @@ export default function ProjectCard({
                 <Image src={icon} width={30} height={30} alt={title} />
             </span>
 
-            <h4 className="text-xl md:text-2xl font-bold text-gray-200 mb-2 md:mb-3">
+            <h3 className="text-xl md:text-2xl font-bold text-gray-200 mb-2 md:mb-3">
                 {title}
-            </h4>
+            </h3>
             <p className="text-sm md:text-base">{description}</p>
         </a>
     );
