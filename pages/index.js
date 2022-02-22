@@ -55,6 +55,13 @@ export default function Home() {
                         href="https://sedelab.com"
                     />
                     <ProjectCard
+                        title="qpasó"
+                        description="All the news and information from Argentina in a single page."
+                        background="#F8532D"
+                        icon="/images/projects/qpaso.svg"
+                        href="https://qpaso.ar"
+                    />
+                    <ProjectCard
                         title="WarWordly"
                         description="1v1 multiplayer word guessing game."
                         background="#4E60D5"
