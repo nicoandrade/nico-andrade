@@ -1,35 +1,32 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import Logo from "components/Logo";
-import SocialIcons from "components/SocialIcons";
-import Tagline from "components/Tagline";
-import SectionTitle from "components/SectionTitle";
-import Footer from "components/Footer";
-
-import ProjectCard from "components/ProjectCard";
-import ThingCard from "components/ThingCard";
-
+import Footer from "@/components/Footer";
+import Logo from "@/components/Logo";
+import ProjectCard from "@/components/ProjectCard";
+import SectionTitle from "@/components/SectionTitle";
+import SocialIcons from "@/components/SocialIcons";
+import Tagline from "@/components/Tagline";
+import ThingCard from "@/components/ThingCard";
 import photo from "public/photo.png";
 
-export default function Home() {
+export default async function Home() {
     return (
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 mb-10">
-            <div className="w-full flex justify-center my-6">
-                <Link href="/">
-                    <a
-                        className="text-gray-600 hover:text-white transition-colors"
-                        aria-label="Nico Andrade"
-                    >
-                        <Logo className="w-9 h-9" />
-                    </a>
+        <div className="mx-auto mb-10 max-w-5xl px-4 sm:px-6 lg:px-8">
+            <div className="my-6 flex w-full justify-center">
+                <Link
+                    href="/"
+                    className="text-gray-600 transition-colors hover:text-white"
+                    aria-label="Nico Andrade"
+                >
+                    <Logo className="h-9 w-9" />
                 </Link>
             </div>
             <div className="mt-28">
                 <Image src={photo} alt="Nico Andrade" width={90} height={90} />
                 <div>
                     <Tagline />
-                    <h1 className="text-6xl md:text-8xl font-extrabold text-white mb-16 leading-tight cursor-default">
+                    <h1 className="mb-16 cursor-default text-6xl font-extrabold leading-tight text-white md:text-8xl">
                         Nico Andrade
                     </h1>
                 </div>
@@ -39,7 +36,7 @@ export default function Home() {
             <div className="mt-36">
                 <SectionTitle title="Projects" />
 
-                <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-7 lg:gap-9">
+                <div className="grid grid-cols-2 gap-3 md:grid-cols-3 md:gap-7 lg:gap-9">
                     <ProjectCard
                         title="tipybit"
                         description="Receive donations and sell products in Bitcoins."
@@ -124,12 +121,12 @@ export default function Home() {
                 <SectionTitle title="Things" subtitle="Things I really like" />
 
                 {/* Hack to generate custom classes */}
-                <span className="hidden hover:bg-[#000000] hover:bg-[#38BDF8] hover:bg-[#0065A9] hover:bg-[#24B47E] hover:bg-[#6A01DA] hover:bg-[#0969D9] hover:bg-[#2C2C2C] hover:bg-[#DD4C4F] hover:bg-[#1D1D1D] hover:bg-[#FF6161] hover:bg-[#363B45] hover:bg-[#0572EC] hover:bg-[#1771EF] hover:bg-[#0073AA] hover:bg-[#22BC66] hover:bg-[#4354C7] hover:bg-[#40A6EB] hover:bg-[#705F30] hover:bg-[#705F30] hover:bg-[#8D733F]" />
+                {/* <span className="hidden hover:bg-[#000000] hover:bg-[#0065A9] hover:bg-[#0073AA] hover:bg-[#0572EC] hover:bg-[#0969D9] hover:bg-[#1771EF] hover:bg-[#1D1D1D] hover:bg-[#22BC66] hover:bg-[#24B47E] hover:bg-[#2C2C2C] hover:bg-[#363B45] hover:bg-[#38BDF8] hover:bg-[#40A6EB] hover:bg-[#4354C7] hover:bg-[#6A01DA] hover:bg-[#705F30] hover:bg-[#705F30] hover:bg-[#8D733F] hover:bg-[#DD4C4F] hover:bg-[#FF6161]" /> */}
 
-                <h3 className="border-b border-gray-800 text-lg font-bold text-gray-400 pb-3 mb-4">
+                <h3 className="mb-4 border-b border-gray-800 pb-3 text-lg font-bold text-gray-400">
                     Development
                 </h3>
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-2 lg:gap-4 mb-10">
+                <div className="mb-10 grid grid-cols-2 gap-2 md:grid-cols-4 lg:gap-4">
                     <ThingCard
                         title="Next.js"
                         background="#000000"
@@ -180,10 +177,10 @@ export default function Home() {
                     />
                 </div>
 
-                <h3 className="border-b border-gray-800 text-lg font-bold text-gray-400 pb-3 mb-4">
+                <h3 className="mb-4 border-b border-gray-800 pb-3 text-lg font-bold text-gray-400">
                     Apps
                 </h3>
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-2 lg:gap-4 mb-10">
+                <div className="mb-10 grid grid-cols-2 gap-2 md:grid-cols-4 lg:gap-4">
                     <ThingCard
                         title="Figma"
                         background="#2C2C2C"
@@ -241,10 +238,10 @@ export default function Home() {
                     />
                 </div>
 
-                <h3 className="border-b border-gray-800 text-lg font-bold text-gray-400 pb-3 mb-4">
+                <h3 className="mb-4 border-b border-gray-800 pb-3 text-lg font-bold text-gray-400">
                     Services
                 </h3>
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-2 lg:gap-4 mb-10">
+                <div className="mb-10 grid grid-cols-2 gap-2 md:grid-cols-4 lg:gap-4">
                     <ThingCard
                         title="WordPress"
                         background="#0073AA"
@@ -271,10 +268,10 @@ export default function Home() {
                     />
                 </div>
 
-                <h3 className="border-b border-gray-800 text-lg font-bold text-gray-400 pb-3 mb-4">
+                <h3 className="mb-4 border-b border-gray-800 pb-3 text-lg font-bold text-gray-400">
                     Games
                 </h3>
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-2 lg:gap-4 mb-10">
+                <div className="mb-10 grid grid-cols-2 gap-2 md:grid-cols-4 lg:gap-4">
                     <ThingCard
                         title="Warzone"
                         background="#705F30"

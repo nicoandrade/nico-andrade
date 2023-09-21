@@ -1,4 +1,6 @@
-export const InstagramIcon = (props) => (
+import { type SVGProps } from "react";
+
+export const InstagramIcon = (props: SVGProps<SVGSVGElement>) => (
     <svg
         width="32"
         height="32"
@@ -11,7 +13,7 @@ export const InstagramIcon = (props) => (
     </svg>
 );
 
-export const TwitterIcon = (props) => (
+export const TwitterIcon = (props: SVGProps<SVGSVGElement>) => (
     <svg
         width="32"
         height="32"
@@ -24,7 +26,7 @@ export const TwitterIcon = (props) => (
     </svg>
 );
 
-export const DribbbleIcon = (props) => (
+export const DribbbleIcon = (props: SVGProps<SVGSVGElement>) => (
     <svg
         width="32"
         height="32"
@@ -37,7 +39,7 @@ export const DribbbleIcon = (props) => (
     </svg>
 );
 
-export const EmailIcon = (props) => (
+export const EmailIcon = (props: SVGProps<SVGSVGElement>) => (
     <svg
         width="32"
         height="32"
@@ -50,7 +52,7 @@ export const EmailIcon = (props) => (
     </svg>
 );
 
-export const GithubIcon = (props) => (
+export const GithubIcon = (props: SVGProps<SVGSVGElement>) => (
     <svg
         width="32"
         height="32"
@@ -63,7 +65,7 @@ export const GithubIcon = (props) => (
     </svg>
 );
 
-export const SpotifyIcon = (props) => (
+export const SpotifyIcon = (props: SVGProps<SVGSVGElement>) => (
     <svg
         width="32"
         height="32"

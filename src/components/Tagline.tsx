@@ -1,6 +1,6 @@
 export default function Tagline() {
     return (
-        <h2 className="text-2xl md:text-3xl font-bold text-gray-500 my-6 inline-flex items-center group cursor-default">
+        <h2 className="group my-6 inline-flex cursor-default items-center text-2xl font-bold text-gray-500 md:text-3xl">
             Design{" "}
             <svg
                 width="15"
@@ -8,7 +8,7 @@ export default function Tagline() {
                 viewBox="0 0 15 15"
                 fill="currentColor"
                 xmlns="http://www.w3.org/2000/svg"
-                className="w-4 h-4 mx-2 group-hover:rotate-45 group-hover:text-white transition-transform"
+                className="mx-2 h-4 w-4 transition-transform group-hover:rotate-45 group-hover:text-white"
                 aria-label="+"
             >
                 <path d="M3.1156 0.218033L15 11.9347L11.8909 15L0.00648402 3.28328L3.1156 0.218033Z" />
