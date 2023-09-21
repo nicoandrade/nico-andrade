@@ -32,6 +32,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 data-token={env.NEXT_PUBLIC_TINY_BIRD_TOKEN}
                 // @ts-ignore: Unreachable code error
                 tb_domain={env.NEXT_PUBLIC_SITE_URL}
+                data-datasource={env.NEXT_PUBLIC_SITE_URL}
             />
         </html>
     );
