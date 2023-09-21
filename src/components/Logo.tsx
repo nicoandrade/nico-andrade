@@ -1,4 +1,6 @@
-export default function Logo(props) {
+import { type SVGProps } from "react";
+
+export default function Logo(props: SVGProps<SVGSVGElement>) {
     return (
         <svg
             width="130"
