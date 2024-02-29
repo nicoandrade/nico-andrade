@@ -26,12 +26,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <html lang="en">
             <body className={twMerge("font-sans", catamaran.variable)}>
                 <PlausibleProvider domain={env.NEXT_PUBLIC_SITE_URL.replace("https://", "")}>
-                    <PlausibleProvider
-                        domain={env.NEXT_PUBLIC_SITE_URL.replace("https://", "")}
-                        customDomain="https://stats.quemalabs.com"
-                    >
-                        {children}
-                    </PlausibleProvider>
+                    {children}
                 </PlausibleProvider>
             </body>
         </html>
