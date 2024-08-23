@@ -22,7 +22,7 @@ export default function Footer() {
             <div>
                 <div className="flex justify-between border-t border-gray-800 py-3 sm:items-center">
                     <div className="flex justify-center space-x-6 text-sm sm:order-2">
-                        <span>2022</span>
+                        <span>2024</span>
                         <span>Nico Andrade</span>
                     </div>
                     <div className="flex items-center text-sm sm:order-2">
