@@ -28,6 +28,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 <PlausibleProvider domain={env.NEXT_PUBLIC_SITE_URL.replace("https://", "")}>
                     {children}
                 </PlausibleProvider>
+                <script
+                    defer
+                    data-site-id="nicoandrade.com"
+                    src="https://assets.onedollarstats.com/tracker.js"
+                />
             </body>
         </html>
     );
