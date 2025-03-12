@@ -33,6 +33,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                     data-site-id="nicoandrade.com"
                     src="https://assets.onedollarstats.com/tracker.js"
                 />
+                <script
+                    defer
+                    src="https://an.quemalabs.com/script.js"
+                    data-website-id="daa1b5cc-ff6e-4348-b9a8-52097ff58f2d"
+                ></script>
             </body>
         </html>
     );
