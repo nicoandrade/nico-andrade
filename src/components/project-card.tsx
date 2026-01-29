@@ -16,6 +16,7 @@ export function ProjectCard({
     return (
         <a
             className="group relative z-0 flex flex-col gap-2 rounded-2xl transition-all sm:gap-4"
+            data-s-event={`Project: ${title}`}
             href={href}
             rel="noreferrer"
             target="_blank"

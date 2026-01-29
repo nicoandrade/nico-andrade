@@ -20,6 +20,8 @@ export function ThingCard({
                 "group flex items-center gap-3 rounded-lg bg-background p-1 transition-all hover:bg-(--bg-color)",
                 className
             )}
+            data-s-event={"Thing"}
+            data-s-event-props={`title=${title}`}
             href={href}
             rel="noreferrer"
             style={{ "--bg-color": color } as React.CSSProperties}
