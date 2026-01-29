@@ -1,9 +1,0 @@
-@tailwind base;
-
-body {
-    @apply text-gray-500;
-    @apply bg-gradient-to-l from-gray-800 to-gray-900;
-}
-
-@tailwind components;
-@tailwind utilities;

@@ -1,43 +1,56 @@
+import type { Metadata } from "next";
 import { Catamaran } from "next/font/google";
-
-import { env } from "@/env.mjs";
-import "@/styles/globals.css";
-import PlausibleProvider from "next-plausible";
-import { twMerge } from "tailwind-merge";
+import "./globals.css";
+import Script from "next/script";
+import { ThemeProvider } from "@/components/theme-provider";
+import { siteConfig } from "@/config/site";
 
 const catamaran = Catamaran({
+    variable: "--font-catamaran",
     subsets: ["latin"],
-    variable: "--font-sans",
 });
 
-export const metadata = {
-    title: "Nico Andrade",
-    description: "Design + Code",
-    twitter: {
-        handle: "@nicoandrade",
-        site: "@nicoandrade",
-        cardType: "summary_large_image",
+export const metadata: Metadata = {
+    title: {
+        default: siteConfig.name,
+        template: `%s | ${siteConfig.name}`,
     },
-    metadataBase: new URL("https://nicoandrade.com"),
+    description: siteConfig.shortDescription,
+    twitter: {
+        site: siteConfig.links.x,
+        creator: siteConfig.links.x,
+        card: "summary_large_image",
+    },
+    metadataBase: new URL(siteConfig.url),
+    icons: {
+        icon: [
+            {
+                url: "/favicon-light.png",
+                media: "(prefers-color-scheme: light)",
+                type: "image/png",
+            },
+            {
+                url: "/favicon-dark.png",
+                media: "(prefers-color-scheme: dark)",
+                type: "image/png",
+            },
+        ],
+    },
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({ children }: LayoutProps<"/">) {
     return (
-        <html lang="en">
-            <body className={twMerge("font-sans", catamaran.variable)}>
-                <PlausibleProvider domain={env.NEXT_PUBLIC_SITE_URL.replace("https://", "")}>
+        <html lang="en" suppressHydrationWarning>
+            <Script data-debug={siteConfig.url.replace("https://", "")} defer src="/stonks.js" />
+            <body className={`${catamaran.variable} antialiased`}>
+                <ThemeProvider
+                    attribute="class"
+                    defaultTheme="system"
+                    disableTransitionOnChange
+                    enableSystem
+                >
                     {children}
-                </PlausibleProvider>
-                <script
-                    defer
-                    data-site-id="nicoandrade.com"
-                    src="https://assets.onedollarstats.com/tracker.js"
-                />
-                <script
-                    defer
-                    src="https://an.quemalabs.com/script.js"
-                    data-website-id="daa1b5cc-ff6e-4348-b9a8-52097ff58f2d"
-                ></script>
+                </ThemeProvider>
             </body>
         </html>
     );
