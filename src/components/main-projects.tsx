@@ -7,6 +7,13 @@ export function MainProjects() {
             <SectionTitle title="Projects" />
             <div className="grid grid-cols-2 gap-8 md:grid-cols-3 md:gap-10 lg:gap-16">
                 <ProjectCard
+                    background="#000000"
+                    description="The complete database to find dupes for your favorite perfumes."
+                    href="https://dufume.com"
+                    icon="/images/projects/dufume.svg"
+                    title="Dufume"
+                />
+                <ProjectCard
                     background="#D08700"
                     description="Share files instantly using your own S3-compatible storage."
                     href="https://s3nding.nicoandrade.com"
