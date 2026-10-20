@@ -6,35 +6,35 @@ import { ThemeProvider } from "@/components/theme-provider";
 import { siteConfig } from "@/config/site";
 
 const catamaran = Catamaran({
-    variable: "--font-catamaran",
     subsets: ["latin"],
+    variable: "--font-catamaran",
 });
 
 export const metadata: Metadata = {
+    description: siteConfig.shortDescription,
+    icons: {
+        icon: [
+            {
+                media: "(prefers-color-scheme: light)",
+                type: "image/png",
+                url: "/favicon-light.png",
+            },
+            {
+                media: "(prefers-color-scheme: dark)",
+                type: "image/png",
+                url: "/favicon-dark.png",
+            },
+        ],
+    },
+    metadataBase: new URL(siteConfig.url),
     title: {
         default: siteConfig.name,
         template: `%s | ${siteConfig.name}`,
     },
-    description: siteConfig.shortDescription,
     twitter: {
-        site: siteConfig.links.x,
-        creator: siteConfig.links.x,
         card: "summary_large_image",
-    },
-    metadataBase: new URL(siteConfig.url),
-    icons: {
-        icon: [
-            {
-                url: "/favicon-light.png",
-                media: "(prefers-color-scheme: light)",
-                type: "image/png",
-            },
-            {
-                url: "/favicon-dark.png",
-                media: "(prefers-color-scheme: dark)",
-                type: "image/png",
-            },
-        ],
+        creator: siteConfig.links.x,
+        site: siteConfig.links.x,
     },
 };
 

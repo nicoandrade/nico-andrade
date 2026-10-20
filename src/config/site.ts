@@ -1,9 +1,7 @@
 export const siteConfig = {
-    name: "Nico Andrade",
-    shortDescription: "Design + Code",
     description:
         "Driven by curiosity, I work across design and development to create modern, thoughtful interactive experiences.",
-    url: "https://nicoandrade.com",
+    // biome-ignore assist/source/useSortedKeys: Social icons follow this display order.
     links: {
         x: "https://x.com/nicoandrade",
         github: "https://github.com/nicoandrade",
@@ -12,5 +10,8 @@ export const siteConfig = {
         spotify: "https://open.spotify.com/user/elquemero",
         email: "mailto:hi@nicoandrade.com",
     },
+    name: "Nico Andrade",
     repository: "https://github.com/nicoandrade/nico-andrade",
+    shortDescription: "Design + Code",
+    url: "https://nicoandrade.com",
 };

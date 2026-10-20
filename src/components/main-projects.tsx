@@ -69,6 +69,13 @@ export function MainProjects() {
                     icon="/images/projects/dolapp.svg"
                     title="Dolapp"
                 />
+                <ProjectCard
+                    background="#0069A8"
+                    description="Build apps with your AI coding agent. Skip the repetitive setup."
+                    href="https://dinvolt.com"
+                    icon="/images/projects/dinvolt.svg"
+                    title="Dinvolt"
+                />
             </div>
         </div>
     );

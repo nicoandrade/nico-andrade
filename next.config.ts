@@ -6,8 +6,8 @@ const nextConfig: NextConfig = {
     async rewrites() {
         return [
             {
-                source: "/stonks.js",
                 destination: "https://assets.onedollarstats.com/stonks.js",
+                source: "/stonks.js",
             },
         ];
     },

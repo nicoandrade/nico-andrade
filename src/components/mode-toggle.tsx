@@ -1,6 +1,7 @@
 "use client";
 
 import { useTheme } from "next-themes";
+import { useCallback } from "react";
 import { Moon } from "@/components/icons/moon";
 import { Sun } from "@/components/icons/sun";
 
@@ -14,6 +15,9 @@ import {
 
 export function ModeToggle() {
     const { setTheme } = useTheme();
+    const setLightTheme = useCallback(() => setTheme("light"), [setTheme]);
+    const setDarkTheme = useCallback(() => setTheme("dark"), [setTheme]);
+    const setSystemTheme = useCallback(() => setTheme("system"), [setTheme]);
 
     return (
         <DropdownMenu>
@@ -25,9 +29,9 @@ export function ModeToggle() {
                 </Button>
             </DropdownMenuTrigger>
             <DropdownMenuContent align="end">
-                <DropdownMenuItem onClick={() => setTheme("light")}>Light</DropdownMenuItem>
-                <DropdownMenuItem onClick={() => setTheme("dark")}>Dark</DropdownMenuItem>
-                <DropdownMenuItem onClick={() => setTheme("system")}>System</DropdownMenuItem>
+                <DropdownMenuItem onClick={setLightTheme}>Light</DropdownMenuItem>
+                <DropdownMenuItem onClick={setDarkTheme}>Dark</DropdownMenuItem>
+                <DropdownMenuItem onClick={setSystemTheme}>System</DropdownMenuItem>
             </DropdownMenuContent>
         </DropdownMenu>
     );
