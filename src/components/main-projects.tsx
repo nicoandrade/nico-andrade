@@ -7,6 +7,13 @@ export function MainProjects() {
             <SectionTitle title="Projects" />
             <div className="grid grid-cols-2 gap-8 md:grid-cols-3 md:gap-10 lg:gap-16">
                 <ProjectCard
+                    background="#0069A8"
+                    description="Build apps with your AI coding agent. Skip the repetitive setup."
+                    href="https://dinvolt.com"
+                    icon="/images/projects/dinvolt.svg"
+                    title="Dinvolt"
+                />
+                <ProjectCard
                     background="#000000"
                     description="The complete database to find dupes for your favorite perfumes."
                     href="https://dufume.com"
@@ -68,13 +75,6 @@ export function MainProjects() {
                     href="https://nicoandrade.github.io/dolapp/"
                     icon="/images/projects/dolapp.svg"
                     title="Dolapp"
-                />
-                <ProjectCard
-                    background="#0069A8"
-                    description="Build apps with your AI coding agent. Skip the repetitive setup."
-                    href="https://dinvolt.com"
-                    icon="/images/projects/dinvolt.svg"
-                    title="Dinvolt"
                 />
             </div>
         </div>
