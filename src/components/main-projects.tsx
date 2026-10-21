@@ -56,10 +56,10 @@ export function MainProjects() {
                     title="Pickerist"
                 />
                 <ProjectCard
-                    background="#138DD6"
-                    description="Mac App for resizing image with just drag & drop."
-                    href="https://nicoandrade.github.io/resim/"
-                    icon="/images/projects/resim.svg"
+                    background="#AD4253"
+                    description="Free, private image optimizer for macOS. Just drag and drop."
+                    href="https://resim.nicoandrade.com/"
+                    icon="/images/projects/resim-optimizer.svg"
                     title="Resim"
                 />
                 <ProjectCard
