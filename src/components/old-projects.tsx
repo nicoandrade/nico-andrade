@@ -7,6 +7,24 @@ export function OldProjects() {
             <SectionTitle title="Old Projects" />
             <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4 md:gap-10 lg:gap-16">
                 <OldProjectCard
+                    color="#5A649C"
+                    href="https://pickerist.com"
+                    icon="/images/projects/pickerist.svg"
+                    title="Pickerist"
+                />
+                <OldProjectCard
+                    color="#20B490"
+                    href="https://nicoandrade.github.io/dolapp/"
+                    icon="/images/projects/dolapp.svg"
+                    title="Dolapp"
+                />
+                <OldProjectCard
+                    color="#EF7623"
+                    href="https://birtap.com"
+                    icon="/images/projects/birtap.svg"
+                    title="Birtap"
+                />
+                <OldProjectCard
                     color="#2B5CEA"
                     href="https://tipybit.com"
                     icon="/images/projects/tipybit.svg"

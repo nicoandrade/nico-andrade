@@ -49,32 +49,11 @@ export function MainProjects() {
                     title="Quema Labs"
                 />
                 <ProjectCard
-                    background="#5A649C"
-                    description="Instagram giveaways by selecting a random comment."
-                    href="https://pickerist.com"
-                    icon="/images/projects/pickerist.svg"
-                    title="Pickerist"
-                />
-                <ProjectCard
                     background="#AD4253"
                     description="Free, private image optimizer for macOS. Just drag and drop."
                     href="https://resim.nicoandrade.com/"
                     icon="/images/projects/resim-optimizer.svg"
                     title="Resim"
-                />
-                <ProjectCard
-                    background="#EF7623"
-                    description="An app to help user choose the right beer from a bar."
-                    href="https://birtap.com"
-                    icon="/images/projects/birtap.svg"
-                    title="Birtap"
-                />
-                <ProjectCard
-                    background="#20B490"
-                    description="Mac App that shows the price between USD/ARS."
-                    href="https://nicoandrade.github.io/dolapp/"
-                    icon="/images/projects/dolapp.svg"
-                    title="Dolapp"
                 />
             </div>
         </div>
